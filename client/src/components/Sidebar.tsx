@@ -11,9 +11,9 @@ interface SidebarProps {
 
 export default function Sidebar({ activeTab, setActiveTab, ownedCount, sharedCount }: SidebarProps) {
   return (
-    <aside className="w-64 bg-slate-950 border-r border-slate-800/80 p-6 hidden md:flex flex-col space-y-6 text-slate-300">
+    <aside className="w-64 bg-slate-950 border-r border-slate-800/80 p-6 hidden md:flex flex-col space-y-6 text-slate-300 sticky top-16 h-[calc(100vh-4rem)] overflow-y-auto">
       <div className="flex items-center space-x-2 text-slate-400 text-[11px] font-bold tracking-widest uppercase px-3">
-        <FolderOpen className="w-4 h-4 text-emerald-500" />
+        <FolderOpen className="w-4 h-4 text-emerald-400" />
         <span>Navigation</span>
       </div>
 
