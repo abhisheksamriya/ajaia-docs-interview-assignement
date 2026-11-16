@@ -1,12 +1,21 @@
+# Dependencies
 /node_modules
+/client/node_modules
+/server/node_modules
 
+# Production Build & Next.js Cache
 /.next
+/client/.next
 /dist
 /build
 /out
 
+# Environment Variables & Secrets
 .env
-
+.env.local
+.env.development.local
+.env.production.local
+.env*.local
 
 # Logs & Debug files
 npm-debug.log*
@@ -31,3 +40,7 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+
+# Local uploads folder (now handled via memoryStorage, but safe to include)
+/uploads
+/client/uploads
